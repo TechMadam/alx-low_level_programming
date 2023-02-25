@@ -1,16 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/* main- entry point */
 
-/**
- *
- * main - entry point
- *
- * return- always return 0
- *
- */
-
-int main()
+/* Return - always 0 */
+int main(void)
 {
 	char ch;
 
