@@ -1,5 +1,5 @@
-#include <unistd.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point of the program
  *
@@ -8,13 +8,19 @@
  */
 int main(void)
 {
-char c[] = "_putchar\n";
-int i;
+	char ch[] = "_putchar";
+	int i;
 
-for (i = 0; c[i] != '\0'; i++)
-{
- write(1, &c[i], 1);
-}
+	for (i = 0; i <= 7; i++)
+	{
+		char c = ch[i];
 
-return (0);
+		_putchar(c);
+
+		if (i == 7)
+		{
+			_putchar('\n');
+		}
+	}
+	return (0);
 }

@@ -1,20 +1,8 @@
-#include <unistd.h>
+#ifndef MAIN_H_
+#define MAIN_H_
 
-/**
- * main - Entry point of the program
- *
- * Description: Prints "_putchar" followed by a new line
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-    char c[] = "_putchar\n";
-    int i;
+int _putchar(char c);
 
-    for (i = 0; c[i] != '\0'; i++)
-    {
-        write(1, &c[i], 1);
-    }
 
-    return (0);
-}
+
+#endif
