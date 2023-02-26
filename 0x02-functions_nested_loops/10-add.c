@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include "mark.h"
+#include "main.h"
 /**
  * add - adds two integers
- * @a: first integer to add
- * @b: second integer to add
+ * @a: first integer
+ * @b: second integer
  *
- * Return: sum of the two integers
+ * Return: sum of a and b
  */
 int add(int a, int b)
 {
-        return (a + b);
+return (a + b);
 }
