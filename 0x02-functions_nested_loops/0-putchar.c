@@ -1,20 +1,20 @@
-#include <stdio.h>
+#include <unistd.h>
+
 /**
- * main - Entry point
+ * main - Entry point of the program
  *
+ * Description: Prints "_putchar" followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *sh = "_putchar";
+    char c[] = "_putchar\n";
+    int i;
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
+    for (i = 0; c[i] != '\0'; i++)
+    {
+        write(1, &c[i], 1);
+    }
 
-	return (0);
+    return (0);
 }
-
